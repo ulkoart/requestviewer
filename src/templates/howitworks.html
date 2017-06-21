@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RequestViewer</title>
+
+    <link href="/static/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+  to test RequestViewer by curl:
+
+<p style="border: 1px solid red; padding: 10px;">
+    <b>curl -H "Content-Type: application/json" -X POST -d '{"value1":"data1","valuse2":"data2"}'  "127.0.0.1:5000/log" </b>
+</p>
+
+    <footer class="footer">
+        <p>&copy; 2017 Artem Ulko</p>
+    </footer>
+
+</div> <!-- /container -->
+
+
+<script src="static/vendor/jquery/dist/jquery.js"></script>
+<script src="static/vendor/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

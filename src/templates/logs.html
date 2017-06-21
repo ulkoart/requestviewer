@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RequestViewer</title>
+
+    <link href="/static/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <a class="btn btn-primary" href="/clear" role="button">Clear</a>
+    <br><br>
+    {% if logs %}
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Time</th>
+            <th>Data</th>
+            <th>Agent</th>
+            <th>IP</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for log in logs %}
+
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ log.dateTime }}</td>
+            <td>{{ log.postData }}</td>
+            <td>{{ log.HTTP_USER_AGENT }}</td>
+            <td>{{ log.ip }}</td>
+        </tr>
+        {% endfor %}
+        {% else %}
+        <div class="bg-warning-message">
+            <p class="bg-warning">No logs</p>
+
+        {% endif %}
+
+
+        </tbody>
+    </table>
+
+
+</div> <!-- /container -->
+
+
+<script src="static/vendor/jquery/dist/jquery.js"></script>
+<script src="static/vendor/ootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

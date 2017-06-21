@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RequestViewer</title>
+
+    <link href="/static/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation" class="active"><a href="/">Home</a></li>
+                <li role="presentation"><a href="/howitworks">How it works</a></li>
+
+            </ul>
+        </nav>
+        <h3 class="text-muted">RequestViewer</h3>
+    </div>
+
+    <div class="jumbotron">
+        <h1>Welcome to RequestViewer</h1>
+        <p class="lead">
+            A simple application for developers, designed to view the results of POST (in plans and GET) request,
+            can be useful when debugging with the API.
+        </p>
+        <p><a class="btn btn-lg btn-success" href="/log" role="button">See logs</a></p>
+    </div>
+
+    <div class="row marketing">
+        <div class="col-lg-6">
+            <h4>Easy</h4>
+            <p>It's easy to check your request.</p>
+        </div>
+
+        <div class="col-lg-6">
+            <h4>Simple</h4>
+            <p>Data is stored in a simple json file, there is no need to use a database.</p>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2017 Artem Ulko</p>
+    </footer>
+
+</div> <!-- /container -->
+<script src="static/vendor/jquery/dist/jquery.js"></script>
+<script src="static/vendor/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
